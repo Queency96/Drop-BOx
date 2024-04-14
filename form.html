@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="form.css"> -->
+    <title>Form project</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Obidient Teach Space Student Information</h1>
+        <p>please complete the following in its entirely.</p>
+        <form>
+            <label for="fname">First Name <span>*</span></label>
+            <input type="text" id="fname" name="fname" required placeholder="First Name"> <br>
+
+            <label for="lname">Last Name <span>*</span></label>
+            <input type="text" id="lname" name="lname" required placeholder="Last Name"><br>
+
+            <label for="email">E-mail <span>*</span></label>
+            <input type="email" id="email" name="email" required placeholder="E-mail"><br>
+
+            <label for="phone">Phone number <span>*</span></label>
+            <input type="number" pattern="[0-9]+" id="phone" name="phone" placeholder="+234 8077489665"><br>
+
+            <label for="SID">Student ID <span>*</span></label>
+            <input type="text" pattern="[a-zA-Z0-9]-" id="phone" name="phone" maxlength="10" placeholder="PASS-27300"><br>
+
+            <div class="flex1">
+                <div class="sex">
+                    <p>Sex <span>*</span></p>
+                    <label for="sex">Male</label>
+                    <input type="radio" id="sex" name="sex" value="male" checked="checked">
+                    <label for="sex">Female</label>
+                    <input type="radio" id="sex" name="sex" value="male">
+                    <p class="dob">Date of birth</p>
+                    <input type="date" name="" id="">
+                </div>
+                <div class="cohort">
+                    <p>Cohort group <span>*</span></p>
+                    <label for="cohort">Your cohort No.</label>
+                    <input type="number" required placeholder="13">
+                    <p class="bod1"><label for="state">State of Origin</label></p>
+                    <select name="state" id="state">
+                        <option value="">Abia</option>
+                        <option value="">Adamawa</option>
+                        <option value="">Akwa Ibom</option>
+                        <option value="">Anabra</option>
+                        <option value="">Bauchi</option>
+                        <option value="">Bayelsa</option>
+                        <option value="">Benue</option>
+                        <option value="">Borno</option>
+                        <option value="">Cross River</option>
+                        <option value="">Delta</option>
+                        <option value="">Ebonyi</option>
+                        <option value="">Edo</option>
+                        <option value="">Ekiti</option>
+                        <option value="">Enugun</option>
+                        <option value="">Gombe</option>
+                        <option value="">Imo</option>
+                        <option value="">Jigawa</option>
+                        <option value="">Kaduna</option>
+                        <option value="">Kano</option>
+                        <option value="">Kastina</option>
+                        <option value="">Kebbi</option>
+                        <option value="">Kogi</option>
+                        <option value="">Kwara</option>
+                        <option value="" selected>Lagos</option>
+                        <option value="">Borno</option>
+                        <option value="">Nasarawa</option>
+                        <option value="">Niger</option>
+                        <option value="">Ogun</option>
+                        <option value="">Ondo</option>
+                        <option value="">Osun</option>
+                        <option value="">Oyo</option>
+                        <option value="">Plateau</option>
+                        <option value="">Rivers</option>
+                        <option value="">Sokoto</option>
+                        <option value="">Taraba</option>
+                        <option value="">Yobe</option>
+                        <option value="">Zamfara</option>
+                        <option value="">FTC (Abuja)</option>
+                    </select>
+                    
+                </div>
+                
+            </div>
+            
+            <br>
+
+            <div class="flex2">
+                <label for="edu">Education Level</label>
+                <select name="edu" id="edu">
+                    <option value="">Tertiary (Masters/Doctorate)</option>
+                    option value="">Tertiary (undergrate)</option>
+                    <option value="">Vococational</option>
+                    <option value="">Secondary (Senior/Junior)</option>
+                    <option value="">Primary</option>
+                </select>
+            </div>
+
+            <br>
+            
+            <label for="country">Chose your contry</label>
+            <select name="country" id="country">
+                <option value="">Nigeria</option>
+                <option value="">Liberia</option>
+                <option value="">Gambia</option>
+                <option value="">Ghana</option>
+                <option value="">Cameroon</option>
+                <option value="">Niger</option>
+                <option value="">Benin</option>
+                <option value="">Chad</option>
+                <option value="">Burkina Faso</option>
+                <option value="">Senegal</option>
+            </select>
+
+        </form>
+
+    </div>
+    
+</body>
+</html>
