@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dropboxprct.css">
     <script src="https://kit.fontawesome.com/3d02cf7ada.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>dropbox practice</title>
 </head>
 <body>
@@ -36,23 +37,23 @@
 
         <!-- content segment starts here -->
       
-        <div class="content-one">
+        <div class="content-one" data-aos="fade-down" data-aos-duration="3000">
             <h1>Join over 700 million registered <br> users who trust Dropbox</h1>
             <p>Easy to use, reliable, private, and secure. It’s no wonder Dropbox is the choice for storing and sharing your <br> most important files.</p>
         </div>
 
-        <div class="btnfirst">
+        <div class="btnfirst" data-aos="fade-down-right" data-aos-duration="3000">
             <a href="#" class="aaa">Find your plan</a>
             <a href="#" class="bbb">Signup for free</a>
         </div>
 
         <!-- this is the video content section with plan and sign up buttons -->
 
-        <div class="vid"> 
+        <div class="vid" data-aos="flip-down" data-aos-duration="3000"> 
             <video src="/Dropbox_Homepage.mp4" width="800px" autoplay loop></video>
         </div>
 
-        <div class="vid-title">
+        <div class="vid-title" data-aos="zoom-in-up">
             <h1>See what sets Dropbox apart</h1>
         </div>
 
@@ -61,22 +62,22 @@
 
             <div class="advert">
 
-                <div class="content">
+                <div class="content" data-aos="zoom-out-right" data-aos-duration="1000">
                     <i class="fa-regular fa-face-smile"></i>
                     <h2>Your files, not ours</h2>
                     <p>With Dropbox, your files belong to you, not us, so you can be sure we’re not reselling your data.</p>
                 </div>
-                <div class="content">
+                <div class="content" data-aos="zoom-out-up" data-aos-duration="2000">
                     <i class="fa-solid fa-cloud-arrow-up"></i>
                     <h2>All your files in one place</h2>
                     <p>Store computer backups, photo libraries, thousands of documents all your files, in the same place.</p>
                 </div>
-                <div class="content">
+                <div class="content" data-aos="zoom-out-down" data-aos-duration="2500">
                     <i class="fas fa-medal"></i>
                     <h2>One-of-a-kind functionality</h2>
                     <p>Store files as large as 2 TB each, sync at light speed, and allow anyone to preview nearly 200 file types.</p>
                 </div>
-                <div class="content">
+                <div class="content" data-aos="zoom-out-left" data-aos-duration="3000">
                     <i class="fas fa-shield-alt"></i>
                     <h2>Ease of use and security</h2>
                     <p>2/3 of surveyed users say Dropbox keeps their files more secure and we’re a leader in ease of use.</p>
@@ -84,12 +85,13 @@
             </div>
 
 
-            <div class="textmain">
+            <div class="textmain" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     How will you use Dropbox?
             </div>
 
             <div class="usagecontainer">
-                <div class="usage one">
+                <div class="usage one" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500"
+                data-aos-duration="3000">
                     <img src="/image1.webp" alt="How to use Dropbox for work image">
                     <h3>For Work</h3>
                     <h4>Work efficiently with teammates and clients, stay in sync on projects, and keep company data safe—all in one place.</h4>
@@ -97,7 +99,7 @@
                 </div>
             
                     
-                <div class="usage two">
+                <div class="usage two" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="3000">
                     <img src="/image2.webp" alt="Get Dropbox for personal use image">
                     <h3>For personal use</h3>
                     <h4>Keep everything that’s important to you and your family shareable and safe in one place. Back up files in the cloud, share photos and videos, and more.</h4>
@@ -184,5 +186,10 @@
             </div>
            
         </div>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 </html>
